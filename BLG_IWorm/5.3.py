@@ -1,5 +1,5 @@
-import requests
 from bs4 import BeautifulSoup
+import requests
 
 url = 'http://python123.io/ws/demo.html'
 
@@ -11,5 +11,7 @@ except:
     pass
 
 soup = BeautifulSoup(demo, 'html.parser')
-print(soup.prettify())
-print(r.text)
+
+a = soup.find_all(class_="course")
+
+print(a)
