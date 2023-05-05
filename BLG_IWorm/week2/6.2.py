@@ -30,5 +30,3 @@ for i in range(len(ulist)):
 print("{:^10}\t{:^6}\t{:^10}".format("排名","学校名称","总分"))
 for i in ulist:
         print("{:^10}\t{:^6}\t{:^10}".format(i[0],i[1],i[2]))
-
-
